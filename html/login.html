@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+        body {
+            margin: 20vw;
+            padding: 0;
+            background-image: url('image/Background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        div {
+            margin: auto;
+            width: 80%; /* 반응형 디자인을 위해 너비 조정 */
+            max-width: 400px; /* 최대 너비 설정 */
+            background-color: #EEEFF1;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20vh; /* 상단 여백 조정 */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .in {
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9B9B9B;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            form {
+                width: 90%; /* 화면 너비의 90%로 설정 */
+            }
+            form input {
+                width: 100%; /* 입력 요소 너비를 100%로 설정 */
+            }
+            body {
+                margin: 90vw 0; /* 상단과 하단 여백 조정 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <input type="text" placeholder="아이디" class="in">
+            <input type="password" placeholder="비밀번호" class="in">
+            <button type="submit" id="btn" value="로그인"></button>
+        </form>
+    </div>
+</body>
+
+</html>
